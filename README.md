@@ -36,7 +36,6 @@ We compile the model to fit the train sets and validation sets.
 Developed By: **YOHESH KUMAR R.M**
 <br/>
 Register Number: **212222240118**
-
 ### Libraries
 ```py
 import pandas as pd
@@ -160,6 +159,7 @@ metrics[['loss','val_loss']].plot()
 ```
 ### Prediction
 ```py
+print("YOHESH KUMAR R.M\n212222240118")
 i = 20
 p = model.predict(np.array([X_test[i]]))
 p = np.argmax(p, axis=-1)
@@ -167,7 +167,7 @@ y_true = y_test[i]
 print("{:15}{:5}\t {}\n".format("Word", "True", "Pred"))
 print("-" *30)
 for w, true, pred in zip(X_test[i], y_true, p[0]):
-    print("{:15}{}\t{}".format(words[w-1], tags[true], tags[pred]))
+    print("{:15}{}\t{}".format(words[w-1], tags[true], tags[pred])
 ```
 ## OUTPUT
 
@@ -176,6 +176,6 @@ for w, true, pred in zip(X_test[i], y_true, p[0]):
 ![image](https://github.com/yoheshkumar/named-entity-recognition/assets/119393568/f4b6549e-d4bf-445a-895b-b0526b958fdb)
 
 ### Sample Text Prediction
-![image](https://github.com/yoheshkumar/named-entity-recognition/assets/119393568/576490f9-97fa-4238-8bfa-35c40180e7bd)
+![image](https://github.com/yoheshkumar/named-entity-recognition/assets/119393568/3a7e0cc4-d72b-4ed8-9eb0-27ce96ede4a8)
 ## RESULT
 Thus, an LSTM-based model for recognizing the named entities in the text is successfully developed.
